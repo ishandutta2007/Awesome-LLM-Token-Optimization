@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-LLM-Token-Optimization/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-LLM-Token-Optimization?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-LLM-Token-Optimization/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-LLM-Token-Optimization?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-LLM-Token-Optimization/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-LLM-Token-Optimization?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-LLM-Token-Optimization/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-LLM-Token-Optimization?style=flat-square&color=blue" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -68,35 +68,35 @@ The LLM Gateway and AI Observability / Token Optimization sector is estimated at
 
 ## 🔓 Open-Source GitHub Projects
 
-*Ranked and sorted in descending order of GitHub community stars. Each project includes a live star count badge linking directly to its stargazer community.*
+*Ranked and sorted in descending order of GitHub community stars. Each project includes a live Stars_Count badge linking directly to its stargazer community.*
 
 ### Top Tier Frameworks & Gateways
 
-1. **[Caveman](https://github.com/JuliusBrussee/caveman)** [![GitHub stars](https://img.shields.io/github/stars/JuliusBrussee/caveman?style=social&color=white)](https://github.com/JuliusBrussee/caveman/stargazers)  
+1. **[Caveman](https://github.com/JuliusBrussee/caveman)** [![GitHub_Stars](https://img.shields.io/github/stars/JuliusBrussee/caveman?style=social&color=white)](https://github.com/JuliusBrussee/caveman/stargazers)  
    **The context compression proxy for coding agents.** Caveman v1 pioneered terser agent communication styles to reduce output tokens. **Caveman 2** adds input compression: a local proxy that shrinks tool outputs, logs, JSON blobs, and search results before they reach the model.  
    - **Compression targets**: JSON 70–90%, logs 85–95%, code 40–70%, diffs 60–80%, search results 80–95%.  
    - **Benchmark reality check**: JetBrains ran a paired A/B benchmark on real agentic tasks and identified ~8.5% output token savings without measurable quality degradation (82 paired tasks, p=0.82).  
    - **Licensing**: Skill is MIT; proxy engine is BSL-1.1 (free self-hosted use).
 
-2. **[vLLM](https://github.com/vllm-project/vllm)** [![GitHub stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers)  
+2. **[vLLM](https://github.com/vllm-project/vllm)** [![GitHub_Stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers)  
    **High-throughput and memory-efficient LLM serving engine.** Invented **PagedAttention**, which manages KV cache memory with near-zero waste (reducing KV cache memory footprint from 60–80% waste down to under 4%). Supports automatic prefix caching (APC), speculative decoding, chunked prefill, and continuous batching—dramatically reducing the token compute overhead and memory consumption of serving self-hosted LLMs.
 
-3. **[LiteLLM](https://github.com/BerriAI/litellm)** [![GitHub stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers)  
+3. **[LiteLLM](https://github.com/BerriAI/litellm)** [![GitHub_Stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers)  
    **The universal LLM proxy with routing and budget controls.** Provides a unified OpenAI-compatible interface across 100+ providers, with **cost-based routing**, fallbacks, load balancing, and per-key/per-team budget enforcement. Includes a deduplication hook (`litellm_settings.callbacks`) benchmarked to cut prompt tokens by **32.3%** and cost by **30%**, billing-verified.
 
-4. **[SGLang](https://github.com/sgl-project/sglang)** [![GitHub stars](https://img.shields.io/github/stars/sgl-project/sglang?style=social&color=white)](https://github.com/sgl-project/sglang/stargazers)  
+4. **[SGLang](https://github.com/sgl-project/sglang)** [![GitHub_Stars](https://img.shields.io/github/stars/sgl-project/sglang?style=social&color=white)](https://github.com/sgl-project/sglang/stargazers)  
    **Fast serving framework for complex LLM programs and multi-turn workflows.** Introduces **RadixAttention**, which automatically retains and reuses the KV cache across multiple requests with shared prompt prefixes (such as few-shot exemplars, system prompts, multi-turn chat sessions, and tree searches). Yields up to 5x higher throughput and massive token latency reductions.
 
-5. **[Langfuse (Self-Hosted)](https://github.com/langfuse/langfuse)** [![GitHub stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social&color=white)](https://github.com/langfuse/langfuse/stargazers)  
+5. **[Langfuse (Self-Hosted)](https://github.com/langfuse/langfuse)** [![GitHub_Stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social&color=white)](https://github.com/langfuse/langfuse/stargazers)  
    **The open-source LLM engineering and observability platform.** Full self-hosted telemetry providing distributed tracing, prompt management, evaluation, and the Langfuse Playground. Enables engineering teams to empirically measure token counts, benchmark prompt variations, and minimize input tokens while maintaining output precision.
 
-6. **[GPTCache](https://github.com/zilliztech/GPTCache)** [![GitHub stars](https://img.shields.io/github/stars/zilliztech/GPTCache?style=social&color=white)](https://github.com/zilliztech/GPTCache/stargazers)  
+6. **[GPTCache](https://github.com/zilliztech/GPTCache)** [![GitHub_Stars](https://img.shields.io/github/stars/zilliztech/GPTCache?style=social&color=white)](https://github.com/zilliztech/GPTCache/stargazers)  
    **Semantic cache for LLM queries to cut latency and API token burn.** Instead of requiring exact string matches, GPTCache uses vector embeddings and similarity search to identify semantically equivalent prompts, returning cached LLM responses in milliseconds. Fully integrates with LangChain, LlamaIndex, and OpenAI APIs.
 
-7. **[LLMLingua](https://github.com/microsoft/LLMLingua)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/LLMLingua?style=social&color=white)](https://github.com/microsoft/LLMLingua/stargazers)  
+7. **[LLMLingua](https://github.com/microsoft/LLMLingua)** [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/LLMLingua?style=social&color=white)](https://github.com/microsoft/LLMLingua/stargazers)  
    **Prompt compression framework developed by Microsoft Research.** Uses a compact language model (e.g., Llama-2-7B or GPT2-small) to identify and remove redundant, non-essential tokens from extensive prompts, RAG context, and instruction documents. Achieves up to **20x prompt compression** with minimal reasoning or performance degradation.
 
-8. **[Helicone (Self-Hosted)](https://github.com/Helicone/helicone)** [![GitHub stars](https://img.shields.io/github/stars/Helicone/helicone?style=social&color=white)](https://github.com/Helicone/helicone/stargazers)  
+8. **[Helicone (Self-Hosted)](https://github.com/Helicone/helicone)** [![GitHub_Stars](https://img.shields.io/github/stars/Helicone/helicone?style=social&color=white)](https://github.com/Helicone/helicone/stargazers)  
    **Open-source LLM observability and cost analytics.** Self-hosting gives developers complete data retention control, automated request caching, cost-based multi-provider routing, and granular user/session token consumption tracking without exposing payloads to third-party endpoints.
 
 ### Specialized Compression & Caching Proxies
