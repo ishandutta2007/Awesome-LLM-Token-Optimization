@@ -30,61 +30,27 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The LLM Gateway and AI Observability / Token Optimization sector is estimated at **$820M to $1.7B+** globally, expanding rapidly at an estimated CAGR of ~25%–30% toward $7B+ by the early 2030s. The market is **moderately fragmented** at the developer and startup tier—with a proliferation of open-source proxies, model routers, and prompt optimizers—while actively **concentrating at the infrastructure tier** as cloud hyperscalers, APM suites, and established security/infrastructure leaders acquire category-defining platforms.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Portkey](https://portkey.ai/)**  
-
-  AI gateway with **Headroom** context compression as a guardrail. Headroom is a content-aware compression engine that shrinks request messages before inference—you pay for fewer input tokens without changing application code. **Bring-your-own-proxy**: Portkey does not host Headroom; you deploy it in your own infrastructure, and request payloads never leave your network. Supports `optimize` (compressed payload reaches provider) and `audit` (measure savings without altering traffic) modes, with controls for protecting recent messages and analysis context . Best for teams wanting gateway-level compression with data residency control.
-
-
-
-- **[Helicone](https://www.helicone.ai/)**  
-
-  LLM observability platform with an **AI Gateway** that actively optimizes costs through **cost-based routing**—automatically selecting the cheapest available provider, prioritizing your existing BYOK credits, and falling back to the next cheapest option on failure. Provides session-level cost tracking (e.g., "a support chat costs $0.12 on average with 5 API calls"), caching to eliminate redundant calls, and graduated cost alerts . Best for teams that want observability and cost optimization in one platform.
-
-
-
-- **[Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/)**  
-
-  Gateway with **caching** for identical requests, reducing latency and cost. Cache keys are SHA-256 hashes of provider, endpoint, model, auth header, and full request body—exact match required. Per-request controls via headers: `cf-aig-skip-cache` to bypass, `cf-aig-cache-ttl` for duration (60s to 1 month), and `cf-aig-cache-key` for custom grouping . Best for teams already on Cloudflare that want edge-level caching without infrastructure changes.
-
-
-
-- **[Martian](https://withmartian.com/)**  
-
-  Intelligent model router that selects the best LLM for each request based on prompt content, required capabilities, and cost constraints. Uses proprietary routing models to optimize for quality and cost simultaneously. OpenAI-compatible API with transparent routing decisions . Best for teams wanting automatic model selection without building routing logic.
-
-
-
-- **[Langfuse (Cloud)](https://langfuse.com/)**  
-
-  Hosted tier of the open-source LLM engineering platform. Provides tracing, prompt management, and a **Playground** for side-by-side prompt comparison—useful for empirically testing which prompt variants consume fewer tokens while maintaining quality . The open-source core is self-hostable.
-
-
-
-- **[Maxim AI](https://www.getmaxim.ai/)**  
-
-  Enterprise LLM observability platform with distributed tracing, real-time monitoring, and cost per trace tracking. Provides saved views for common debugging patterns, online evaluation, and data curation to transform logs into datasets . Best for enterprises needing compliance-grade observability.
-
-
-
-- **[PromptLayer](https://www.promptlayer.com/)**  
-
-  Prompt management, observability, and evals platform. Traces production requests to understand quality, cost, and latency, then uses Tables to monitor results and run evaluations, with a Prompt Registry for approved versions . Best for teams that want prompt versioning and cost visibility together.
-
-
+| Platform | Company Size (Valuation / Revenue) | Starting Paid Tier Pricing | Free Tier Limits | Key Capabilities & Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/)** | ~$75B–$85B Market Cap ($2.17B FY25 Revenue) | **$5/month** (Workers Paid plan) | **100,000 logs total limit** across up to 10 gateways; unlimited requests with BYOK credentials; core analytics & caching free | Edge-level exact-match response caching (SHA-256 hash), rate limiting, DLP scanning, and multi-provider analytics. |
+| **[Portkey](https://portkey.ai/)** | ~$140M Valuation (Acquired by Palo Alto Networks; $18M+ raised) | **$49/month** (Production Starter tier) | **10,000 recorded logs/month** (requests continue unblocked after limit); free forever | AI gateway featuring Headroom context compression, BYO-proxy deployment for local data residency, multi-provider load balancing, and guardrails. |
+| **[Langfuse (Cloud)](https://langfuse.com/)** | Seed-funded ($4M raised, backed by Lightspeed & YC; acquired by ClickHouse) | **$29/month** (Core plan) | **50,000 units/month** (traces/observations), 30 days retention, 2 user seats, 1,000 requests/min ingestion rate limit | Hosted tier of open-source LLM engineering platform; distributed tracing, token/cost attribution, prompt management, and prompt playground. |
+| **[Helicone](https://www.helicone.ai/)** | ~$25M Valuation ($5M Seed, YC W23; ~$1M ARR) | **$79/month** (Pro plan) | **10,000 requests/month**, 1 GB storage, 7-day data retention, 1 seat; free forever | AI Gateway and observability platform featuring cost-based routing across BYOK credentials, session-level cost tracking, and response caching. |
+| **[Martian](https://withmartian.com/)** | Venture-backed (~$9M–$23M raised, NEA & Prosus Ventures) | Pay-as-you-go per-token provider rates + routing compute fees (Enterprise custom) | **Free developer trial / tier** for prototyping router API requests without upfront platform commitments | Dynamic model router predicting and directing prompt workloads to the most cost-effective LLM based on prompt complexity and performance targets. |
+| **[PromptLayer](https://www.promptlayer.com/)** | Seed-funded ($4.8M raised, Stellation Capital & ScOp VC) | **$49/month** (Pro plan) | **2,500 requests/month**, 10 prompts, 250 eval cell executions/month, 10 MB dataset limit, up to 5 users | Prompt registry, versioning, production request tracing, side-by-side prompt comparisons, and automated evaluations. |
+| **[Maxim AI](https://www.getmaxim.ai/)** | Seed-funded ($3M raised, Elevation Capital) | **$29/seat/month** (Professional plan) | **10,000 logs/month**, 3 seats, 1 workspace, 3-day data retention; free forever | Enterprise LLM evaluation, distributed tracing, cost-per-trace analytics, simulation playground, and Bifrost open-source gateway. |
 
 ## Open-Source GitHub Projects
 
