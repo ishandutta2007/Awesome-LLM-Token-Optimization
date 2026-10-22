@@ -1,46 +1,58 @@
 # Awesome-LLM-Token-Optimization
 
-## Top LLM Token Optimization Ecosystem
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome LLM Token Optimization Banner" width="100%" />
+</p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-LLM-Token-Optimization/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-LLM-Token-Optimization?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-LLM-Token-Optimization/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-LLM-Token-Optimization?style=social" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-LLM-Token-Optimization/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-LLM-Token-Optimization?style=flat-square&color=blue" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+## 🚀 Top LLM Token Optimization Ecosystem
 
-*Focused on Prompt Compression, Intelligent Routing & Self-Hosted Cost Governance*  
+**Curated Directory of Enterprise SaaS Gateways & High-Performance Open-Source Projects**  
+*Comprehensive architectures for Prompt Compression, Semantic Caching, Intelligent Routing, KV-Cache Optimization & Self-Hosted Cost Governance.*
 
-**Last updated: October 2026**
+📅 **Last updated:** October 2026
 
+**Awesome LLM Token Optimization** is a comprehensive, production-grade index of software tools, frameworks, and hosted platforms designed to maximize context efficiency and reduce large language model (LLM) API costs and latency. By compressing input context, reusing prompt prefixes, caching semantic completions, deduplicating repetitive chat histories, and dynamically routing prompts to cost-effective models, these tools unlock drastic inference savings without compromising response quality.
 
+**Key highlights**:
+- 🗜️ **Context & Prompt Compression**: Shrink tool outputs, JSON structures, retrieval payloads, and chat logs by up to 80%.
+- 🔀 **Intelligent Model Routing**: Dynamically match prompt complexity to the cheapest capable model (e.g., routing between Claude 3.5 Sonnet, GPT-4o, and Llama 3.3).
+- ⚡ **Semantic Caching & Prefix Caching**: Serve identical or semantically equivalent queries from cache without re-querying frontier models.
+- 🛡️ **Self-Hosted Cost Governance**: Enforce team budgets, rate limits, BYOK credentials, and full data sovereignty.
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **LLM Token Optimization**. These tools reduce the cost and latency of LLM applications by compressing input context, caching responses, routing requests to cheaper models, and providing visibility into token consumption—without degrading output quality.
+---
 
+## 📑 Table of Contents
 
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS/Hosted Platforms](#️-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [Top Tier Frameworks & Gateways](#top-tier-frameworks--gateways)
+  - [Specialized Compression & Caching Proxies](#specialized-compression--caching-proxies)
+- [🛠️ How to Contribute](#️-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-**Examples** include Portkey, Helicone, LiteLLM, Cloudflare AI Gateway, Martian, Langfuse, Maxim AI, and Caveman (the category leaders).
+---
 
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding per-token vendor lock-in, and retaining control over compression and routing logic—ideal for teams that need cost predictability and data sovereignty. The open-source landscape is anchored by **LiteLLM** (the universal proxy with routing and budget controls), **Helicone** (the observability layer with gateway-based cost optimization), **Langfuse** (the open-source LLM engineering platform), and **Caveman** (the context compression proxy for coding agents), with **Portkey's Headroom** integration providing content-aware compression for self-hosted deployments.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The LLM Gateway and AI Observability / Token Optimization sector is estimated at **$820M to $1.7B+** globally, expanding rapidly at an estimated CAGR of ~25%–30% toward $7B+ by the early 2030s. The market is **moderately fragmented** at the developer and startup tier—with a proliferation of open-source proxies, model routers, and prompt optimizers—while actively **concentrating at the infrastructure tier** as cloud hyperscalers, APM suites, and established security/infrastructure leaders acquire category-defining platforms.
 
-## SaaS/Hosted Platforms
+---
+
+## ☁️ SaaS/Hosted Platforms
 
 | Platform | Company Size (Valuation / Revenue) | Starting Paid Tier Pricing | Free Tier Limits | Key Capabilities & Highlights |
 | :--- | :--- | :--- | :--- | :--- |
@@ -52,84 +64,86 @@ The LLM Gateway and AI Observability / Token Optimization sector is estimated at
 | **[PromptLayer](https://www.promptlayer.com/)** | Seed-funded ($4.8M raised, Stellation Capital & ScOp VC) | **$49/month** (Pro plan) | **2,500 requests/month**, 10 prompts, 250 eval cell executions/month, 10 MB dataset limit, up to 5 users | Prompt registry, versioning, production request tracing, side-by-side prompt comparisons, and automated evaluations. |
 | **[Maxim AI](https://www.getmaxim.ai/)** | Seed-funded ($3M raised, Elevation Capital) | **$29/seat/month** (Professional plan) | **10,000 logs/month**, 3 seats, 1 workspace, 3-day data retention; free forever | Enterprise LLM evaluation, distributed tracing, cost-per-trace analytics, simulation playground, and Bifrost open-source gateway. |
 
-## Open-Source GitHub Projects
+---
 
+## 🔓 Open-Source GitHub Projects
 
+*Ranked and sorted in descending order of GitHub community stars. Each project includes a live star count badge linking directly to its stargazer community.*
 
-- **[LiteLLM](https://github.com/BerriAI/litellm)**  
+### Top Tier Frameworks & Gateways
 
-  **The universal LLM proxy with routing and budget controls.** Provides a unified OpenAI-compatible interface across 100+ providers, with **cost-based routing**, fallbacks, load balancing, and per-key/per-team budget enforcement. **Deduplication hook** (via `litellm_settings.callbacks`) has been benchmarked to reduce prompt tokens by **32.3%** and cost by **30%**, billing-verified . **Strengths**: the broadest provider coverage, mature proxy mode for team deployments, and active development. **Trade-offs**: configuration complexity scales with feature usage. Best for teams that want one proxy to manage routing, budgets, and provider abstraction across their entire LLM stack.
+1. **[Caveman](https://github.com/JuliusBrussee/caveman)** [![GitHub stars](https://img.shields.io/github/stars/JuliusBrussee/caveman?style=social&color=white)](https://github.com/JuliusBrussee/caveman/stargazers)  
+   **The context compression proxy for coding agents.** Caveman v1 pioneered terser agent communication styles to reduce output tokens. **Caveman 2** adds input compression: a local proxy that shrinks tool outputs, logs, JSON blobs, and search results before they reach the model.  
+   - **Compression targets**: JSON 70–90%, logs 85–95%, code 40–70%, diffs 60–80%, search results 80–95%.  
+   - **Benchmark reality check**: JetBrains ran a paired A/B benchmark on real agentic tasks and identified ~8.5% output token savings without measurable quality degradation (82 paired tasks, p=0.82).  
+   - **Licensing**: Skill is MIT; proxy engine is BSL-1.1 (free self-hosted use).
 
+2. **[vLLM](https://github.com/vllm-project/vllm)** [![GitHub stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers)  
+   **High-throughput and memory-efficient LLM serving engine.** Invented **PagedAttention**, which manages KV cache memory with near-zero waste (reducing KV cache memory footprint from 60–80% waste down to under 4%). Supports automatic prefix caching (APC), speculative decoding, chunked prefill, and continuous batching—dramatically reducing the token compute overhead and memory consumption of serving self-hosted LLMs.
 
+3. **[LiteLLM](https://github.com/BerriAI/litellm)** [![GitHub stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers)  
+   **The universal LLM proxy with routing and budget controls.** Provides a unified OpenAI-compatible interface across 100+ providers, with **cost-based routing**, fallbacks, load balancing, and per-key/per-team budget enforcement. Includes a deduplication hook (`litellm_settings.callbacks`) benchmarked to cut prompt tokens by **32.3%** and cost by **30%**, billing-verified.
 
-- **[Helicone (Self-Hosted)](https://github.com/Helicone/helicone)**  
+4. **[SGLang](https://github.com/sgl-project/sglang)** [![GitHub stars](https://img.shields.io/github/stars/sgl-project/sglang?style=social&color=white)](https://github.com/sgl-project/sglang/stargazers)  
+   **Fast serving framework for complex LLM programs and multi-turn workflows.** Introduces **RadixAttention**, which automatically retains and reuses the KV cache across multiple requests with shared prompt prefixes (such as few-shot exemplars, system prompts, multi-turn chat sessions, and tree searches). Yields up to 5x higher throughput and massive token latency reductions.
 
-  Open-source LLM observability with the same cost tracking and gateway optimization features as the cloud offering. Self-hosting gives full control over request data and retention. Best for teams that want Helicone's cost analytics without sending traffic through a third-party service.
+5. **[Langfuse (Self-Hosted)](https://github.com/langfuse/langfuse)** [![GitHub stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social&color=white)](https://github.com/langfuse/langfuse/stargazers)  
+   **The open-source LLM engineering and observability platform.** Full self-hosted telemetry providing distributed tracing, prompt management, evaluation, and the Langfuse Playground. Enables engineering teams to empirically measure token counts, benchmark prompt variations, and minimize input tokens while maintaining output precision.
 
+6. **[GPTCache](https://github.com/zilliztech/GPTCache)** [![GitHub stars](https://img.shields.io/github/stars/zilliztech/GPTCache?style=social&color=white)](https://github.com/zilliztech/GPTCache/stargazers)  
+   **Semantic cache for LLM queries to cut latency and API token burn.** Instead of requiring exact string matches, GPTCache uses vector embeddings and similarity search to identify semantically equivalent prompts, returning cached LLM responses in milliseconds. Fully integrates with LangChain, LlamaIndex, and OpenAI APIs.
 
+7. **[LLMLingua](https://github.com/microsoft/LLMLingua)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/LLMLingua?style=social&color=white)](https://github.com/microsoft/LLMLingua/stargazers)  
+   **Prompt compression framework developed by Microsoft Research.** Uses a compact language model (e.g., Llama-2-7B or GPT2-small) to identify and remove redundant, non-essential tokens from extensive prompts, RAG context, and instruction documents. Achieves up to **20x prompt compression** with minimal reasoning or performance degradation.
 
-- **[Langfuse (Self-Hosted)](https://github.com/langfuse/langfuse)**  
+8. **[Helicone (Self-Hosted)](https://github.com/Helicone/helicone)** [![GitHub stars](https://img.shields.io/github/stars/Helicone/helicone?style=social&color=white)](https://github.com/Helicone/helicone/stargazers)  
+   **Open-source LLM observability and cost analytics.** Self-hosting gives developers complete data retention control, automated request caching, cost-based multi-provider routing, and granular user/session token consumption tracking without exposing payloads to third-party endpoints.
 
-  **The open-source LLM engineering platform.** Provides tracing, prompt management, evaluation, and the Playground for prompt iteration . **Token optimization angle**: the Playground enables empirical comparison of prompt variants—testing whether a shorter prompt maintains quality before deploying it. Best for teams that want observability and prompt experimentation without vendor lock-in.
+### Specialized Compression & Caching Proxies
 
-
-
-- **[Caveman](https://github.com/JuliusBrussee/caveman)**  
-
-  **The context compression proxy for coding agents.** Caveman v1 made agents "talk like cavemen" to reduce output tokens. **Caveman 2** adds input compression: a local proxy that shrinks tool outputs, logs, JSON blobs, and search results before they reach the model . **Compression targets by payload type**: JSON 70–90%, logs 85–95%, code 40–70%, diffs 60–80%, search results 80–95% . **Critical reality check**: JetBrains ran a paired A/B benchmark on real agentic tasks and found **~8.5% output token savings**, not the advertised 65%—because agent output is dominated by code and tool calls, which Caveman correctly preserves. No measurable quality degradation was detected (82 paired tasks, p=0.82) . **Licensing**: the skill is MIT; the engine/proxy is **BSL-1.1** (free to self-host for your own traffic, including production; third-party hosted service requires commercial license; sunsets to Apache-2.0 in ~4 years) . Best for coding agent users who want local, BYOK input compression with honest expectations about savings.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Paritok** — Context compression proxy with an OpenAI/Anthropic-compatible interface. Reports live compression stats via `/stats` endpoint, with cache-aware cost savings calculation. Best for teams wanting a lightweight compression proxy similar to Caveman but with a different implementation .
-
-- **Unify** — Python SDK for routing across models and providers with a unified interface, enabling quality/cost/speed benchmarking to select the best endpoint per prompt . Best for teams building custom routing logic in Python.
-
-- **Frameworks for building custom systems**: Use **LiteLLM** as the proxy layer for routing and budgets, **Helicone** or **Langfuse** for observability, and **Caveman** or **Paritok** for input compression where applicable. Use **Langfuse Playground** to empirically validate that compressed or shortened prompts maintain quality before deploying.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- **Token savings claims require scrutiny**: Caveman's advertised 65% was measured on chat-style prose. JetBrains' independent benchmark on real agentic tasks found ~8.5% output token savings because code and tool calls dominate agent output and are preserved verbatim . Always validate savings against your actual workload.
-
-- **Compression carries quality risk**: while JetBrains found no measurable degradation in their test, compression that drops context the model needs could harm output quality in untested scenarios. Use `audit` mode (where available) to measure before enabling `optimize`.
-
-- **Licensing varies**: Caveman's engine is BSL-1.1 (source-available, free for self-hosted production use, commercial license required for hosted services) . LiteLLM, Helicone, and Langfuse are open-source. Verify terms before commercial deployment.
-
-- **Observability is not optimization**: Helicone, Langfuse, and Maxim show you where tokens go; they don't automatically reduce them. Pair observability with routing, caching, or compression to actually lower costs.
-
-
+- **[Paritok](https://github.com)** — Lightweight context compression proxy with OpenAI and Anthropic compatible routing. Exposes live compression ratios via `/stats` and computes real-time cache savings.
+- **[Unify](https://github.com)** — Unified Python SDK and routing layer benchmarking LLM quality, latency, and cost per million tokens across model endpoints in real time.
 
 ---
 
+## 🛠️ How to Contribute
 
+Contributions are welcome! Help build the definitive index for LLM token optimization:
 
-**Made for AI engineers, platform teams, and developers building cost-efficient LLM applications.**  
+1. 🍴 Fork the repository.
+2. 📝 Add or edit entries in `README.md` (keep descriptions objective, factual, and benchmark-verified).
+3. 🔗 Verify all links, GitHub handles, and pricing tiers.
+4. 🚀 Submit a Pull Request with a clear description of the project.
 
-Let's make LLM token optimization more open, honest about savings, and appropriately scoped.
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-LLM-Token-Optimization&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-LLM-Token-Optimization&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for visiting and supporting **Awesome LLM Token Optimization**! 🙌
+
+If you find this repository valuable for your AI engineering workflows, cost reductions, or research, please consider:
+- ⭐ **Starring** the repository to boost visibility.
+- 🍴 **Forking** and contributing new optimization tools, proxies, and benchmarks.
+- 📢 **Sharing** with your network, engineering teammates, and AI communities.
+- ☕ **Buying a coffee / Sponsoring the project**: Support ongoing maintenance, community benchmarks, and curated open-source research via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer
+
+- 📌 This repository is a **community-curated index** — entries do not imply formal endorsement.
+- ⚖️ **Token savings claims require empirical scrutiny**: Advertised compression percentages often reflect synthetic prose tests. In agentic or coding workflows dominated by syntax and tool calls, realistic savings generally range between 8% and 35%. Always validate with `audit` mode or paired A/B benchmarks.
+- 🔒 **Verify licensing**: Open-source licenses vary from permissive (MIT/Apache-2.0 in vLLM, LiteLLM, Langfuse, LLMLingua, GPTCache) to source-available (BSL-1.1 in Caveman). Check commercial deployment compatibility.
+- 🔍 **Observability vs. Optimization**: Observability platforms trace token spend; pair them with caching, compression proxies, or intelligent routing to realize direct billing reductions.
+
+---
+
+<p align="center">
+  <b>Built for AI engineers, platform architects, and developers engineering efficient LLM systems.</b>
+</p>
